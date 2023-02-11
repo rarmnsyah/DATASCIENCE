@@ -5,7 +5,7 @@ import pandas as pd
 
 # dirpath = os.path.dirname(os.path.realpath(__file__)) 
 
-def twint_search(search, name_file, lang = 'id', limit = 10, store = True):
+def twint_search(search, name_file, lang = 'en', limit = 10, store = True):
     config = twint.Config()
     config.Search = search
     config.Lang = lang
@@ -19,6 +19,6 @@ def twint_search(search, name_file, lang = 'id', limit = 10, store = True):
     # return config.output()
 
 # test_search = twint_search('islam', 'store_twit_islam.json', store = True, limit = 10000)
-twint_search('muslim', 'store_twit_muslim.csv', limit = 20000)
+twint_search('islam', 'store_twit_islam.csv', limit = 20000)
 # print(dirpath)
 # print(test_search)
