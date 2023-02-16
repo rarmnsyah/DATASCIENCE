@@ -19,9 +19,9 @@ def twint_search(search, name_file, lang='en', limit=10, store=True):
     # return config.output()
 
 
-keyword = 'jokowi'
+keyword = 'islam'
 # test_search = twint_search('islam', 'store_twit_islam.json', store = True, limit = 10000)
 twint_search(
-    keyword, 'databases/store_twit_{}.csv'.format(keyword), limit=20000)
+    'islam OR quran OR isis OR hadits OR muhammad', 'databases/store_twit_{}.csv'.format(keyword), limit=1000000)
 # print(dirpath)
 # print(test_search)
