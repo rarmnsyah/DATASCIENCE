@@ -10,7 +10,7 @@ def number_1(n):
 
 def number_1_2(n):
     for i in range(3, -1, -1):
-        print(((n // 10**i) + 2) % 10, end = '')
+        print(((n // 10**i) + 2) % 10, end = '')    
         n = n % 10**i
 
 def number_2(n):
